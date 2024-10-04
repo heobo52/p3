@@ -1,0 +1,16 @@
+#scroll{
+    background-image: url(./project_img/bgi_sub3.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.scroll_img{
+    width: 50px;
+}
+
+.donga_content{
+    display: none;
+}

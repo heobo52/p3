@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project3</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./scroll.css">
 </head>
 <body>
     <header>
         <div class="header_container">
             <nav class="memu_content_contaienr">
-                <li class="memu_content">About</li>
-                <li class="memu_content">Portfolio</li>
-                <li class="memu_content">Contact</li>
+                <li class="memu_content"><a href="">About</a></li>
+                <li class="memu_content"><a href="">Portfolio</a></li>
+                <li class="memu_content"><a href="">Contact</a></li>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="main_intro">
+        <section id="main_intro">
             <div class="intro_container">
                 <div class="intro_text_container">
-                    <h1 class="intro_title_e">Challenge Becomes Opportunity</h1>
-                    <p class="intro_content_k">
-                        안녕하세요<br>
-                        신입 퍼블리셔 허유선의<br>
-                        개인 포트폴리오 사이트에 오신 것을 환영합니다.
-                    </p>
+                    <div class="intro_typing_container">
+                        <span id="text"></span><span id="cursor"></span>
+                    </div>
+                        <p class="intro_content_k">
+                            안녕하세요<br>
+                            신입 퍼블리셔 허유선의<br>
+                            개인 포트폴리오 사이트에 오신 것을 환영합니다.
+                        </p>
+                    </div>
                 </div>
                 <div class="mouse_container">
                     <div class="animation_container">
@@ -37,63 +43,67 @@
             </div>   
         </section>
 
-        <section class="about">
+        <section id="about">
             <div class="about_container">
-                <h3 class="about_title_e">About,me</h3>
+                <h3 class="title_e">About, me</h3>
                 <div class="img_text_container">
                     <div class="img_container">
-                        <img class="me_img" src="./project_img/about_me_img.png" alt="인물사진">
+                        <img class="my_img" src="./project_img/about_me_img.png" alt="prople_img">
                         <div class="about_text_container">
                             <p class="about_name">허유선</p>
                             <p class="about_birth_date">1998.05.02</p>
                         </div>
                     </div>
                     <div class="about_content_container">
-                        <p class="about_content">안녕하세요.</p>
-                        <button class="about btn"><link rel="stylesheet" href=""></button>
+                        <p class="about_content">
+                            안녕하세요! 신입 웹 퍼블리셔 허유선입니다.
+                        </p>
+                        <p class="about_content">
+                            저는 웹 퍼블리셔로서 접근성과 SEO를 고려한 견고한 웹사이트 구축을 목표로 하고 있습니다.<br>
+                        </p>
+                        <p class="about_content">
+                            사회복지사로서 쌓은 소통과 협력의 경험은 팀원들과의 협업과 클라이언트의 요구를 명확하게 이해하는 데 큰 강점이 될 것입니다.<br>
+                        </p>
+                        <p class="about_content">
+                            이러한 경험을 바탕으로, 원활한 소통과 협력을 통해 사용자 중심의 웹 경험을 제공하며, 지속적으로 성장하는 퍼블리셔가 되고자 합니다.
+                        </p>
+                        <button class="about_btn btn"><a href="">자세히 보기</a></button>
                     </div>
                 </div>
             </div>
             <div class="slider_container">
                 <div class="slider">
-                    <div class="slide_container">
-                        <ul class="contents_wrapper">
-                            <li class="content">
+                    <p class="slide_title_k">Key Word</p>
+                    <div class="my-slide">
+                            <div class="content">
                                 <img class="slide_icon" src="./project_img/key_word_communication_icon.png" alt="communication">
                                 <p class="slide_icon_text">communication</p>
-                            </li>
-                            <li class="content">
+                            </div>
+                            <div class="content">
                                 <img class="slide_icon" src="./project_img/key_word_cooperate_icon.png" alt="cooperate">
                                 <p class="slide_icon_text">cooperate</p>
-                            </li>
-                            <li class="content">
-                                <img class="slide_icon" src="./project_img/key_word_flesibillity_icon.png" alt="flesibillity">
-                                <p class="slide_icon_text">flesibillity</p>
-                            </li>
-                            <li class="content">
+                            </div>
+                            <div class="content">
+                                <img class="slide_icon" src="./project_img/key_word_flesibillity_icon.png" alt="flexibility">
+                                <p class="slide_icon_text">flexibility</p>
+                            </div>
+                            <div class="content">
                                 <img class="slide_icon" src="./project_img/key_word_passion_icon.png" alt="passion">
                                 <p class="slide_icon_text">passion</p>
-                            </li>
-                            <li class="content">
+                            </div>
+                            <div class="content">
                                 <img class="slide_icon" src="./project_img/key_word_systematic_icon.png" alt="systematic">
                                 <p class="slide_icon_text">systematic</p>
-                            </li>
-                        </ul>
+                            </div>
                     </div>
-                    <!-- <div class="slider-interface">
-                        <button class="prev">이전</button>
-                        <div class="button-container">
-                            
-                        </div>
-                        <button class="next">다음</button>
-                    </div> -->
                 </div>
             </div>
         </section>
+        
 
         <section id="skill">
             <div class="skills_container">
-                <h3 class="skills_title_e">What skills can you do?</h3>
+                <h3 class="title_e">What skills can you do?</h3>
                 <div class="skills_icon_container">
                     <img class="skills_icon" src="./project_img/skill_ai_icon.png" alt="ai_icon">
                     <img class="skills_icon" src="./project_img/skill_ps_icon.png" alt="ps_icon">
@@ -103,68 +113,76 @@
                     <img class="skills_icon" src="./project_img/skill_figma_icon.png" alt="figma_icon">
                 </div>
             </div>
+            <div class="skills_rotate_img_container">
+                <img class="rotate_img top" src="./project_img/main_3d_icon3.png" alt="">
+                <img class="rotate_img left" src="./project_img/main_3d_icon4.png" alt="">
+                <img class="rotate_img bottom" src="./project_img/main_3d_icon5.png" alt="">
+            </div>
         </section>
 
         <section id="loop">
             <div class="portfolio_loop_container">
                 <div class="loop_content_container">
-                    <div class="loop_content">Portfolio &#42; </div>
-                    <div class="loop_content">Portfolio &#42; </div>
-                    <div class="loop_content">Portfolio &#42; </div>
-                    <div class="loop_content">Portfolio &#42; </div>
+                    <div class="loop_content">Portfolio&#42;</div>
+                    <div class="loop_content">Portfolio&#42;</div>
+                    <div class="loop_content">Portfolio&#42;</div>
+                    <div class="loop_content">Portfolio&#42;</div>
+                    <div class="loop_content">Portfolio&#42;</div>
+                    <div class="loop_content">Portfolio&#42;</div>
                 </div>
             </div>
         </section>
 
-        <section class="scroll">
+        <section id="scroll">
             <div class="scroll_container">
-                <div class="scroll_left_container">
+                <div class="scroll_left_container" id="fixed_container">
                     <div class="fixed_text_content">punto project</div>
                     <div class="fixed_text_content">동아제약</div>
                 </div>
 
                 <div class="scroll_right_container">
-                    <div class="punto_content">
-                        <h2 class="scroll_content_title">Punto Project_Production</h2>
-                        <img class="scroll_img" src="./project_img/punto_web_img.png" alt="">
-                        <div class="scroll_ponit_content_container">
-                            <img class="scroll_gif" src="" alt="">
-                            <p class="scroll_point_text"></p>
-                            <img class="scroll_gif" src="" alt="">
-                            <p class="scroll_point_text"></p>
-                            <img class="scroll_gif" src="" alt="">
-                            <span class="main_point"></span>
-                            <p class="scroll_point_text"></p>
+                    <div class="scroll_section">
+                        <div class="scroll_content punto_content active">
+                            <h2 class="scroll_content_title">Punto Project_Production</h2>
+                            <img class="scroll_img" src="./project_img/punto_web_img.png" alt="punto_web_mockup_img">
+                            <p class="punto_content_text">가상의 디자인 에이전시 'Punto Project' 웹사이트를 제작했습니다.<br>다양한 인터렉션을 통해 브랜드의 역동성을 강조하였으며,<br>블랙과 화이트 컬러를 사용해 심플하면서도 가독성이 뛰어난 디자인을 구현했습니다.</p>
+                            <img class="scroll_img" src="./project_img/punto_web_loop_gif.gif" alt="punto_loop_content_gif">
+                            <p class="scroll_point_text">흘러가는 텍스트 루프 컨텐츠 배치</p>
+                            <img class="scroll_img" src="./project_img/punto_web_click_content_gif.gif" alt="punto_click_content_gif">
+                            <p class="scroll_point_text">브랜드의 핵심가치를 복합적 인터랙션을 통해 보여줌</p>
+                            <img class="scroll_img" src="./project_img/punto_web_scroll_content_gif.gif" alt="punto_scroll_content_gif">
+                            <span class="main_point">Main Point</span>
+                            <p class="scroll_point_text">스크롤 슬라이더를 통해<br>한눈에 볼 수 있는 포트폴리오 페이지 제작</p>
                         </div>
-                        <div class="link_web_container">
-                            <img class="link_web_img" src="./project_img/punto_web_mockup.png" alt="">
-                            <p class="link_web_text_content"></p>
-                            <p class="link_web_text_content"></p>
-                            <p class="link_web_text_content"></p>
-                            <button class="scroll_btn btn"><a href=""></a></button>
+                        <div class="scroll_content punto_content link_web_container">
+                            <img class="link_web_img scroll_img" src="./project_img/punto_web_mockup.png" alt="">
+                            <p class="link_web_text_content">표현작업 : 반응형 웹페이지</p>
+                            <p class="link_web_text_content">제작프로그램 : Figma, VisalStudio Code</p>
+                            <p class="link_web_text_content">디자인 및 개발스킬 : ux/ui 디자인, figma 활용, 와이어프레임 제작, 스타일가이드 제작, HTML5 + CSS3활용</p>
+                            <button class="scroll_btn"><a href="">사이트 보러가기</a></button>
+                        </div>
+
+                        <div class="scroll_content donga_content">
+                            <h2 class="scroll_content_title">동아제약_Rebuilding</h2>
+                            <img class="scroll_img" src="./project_img/donga_web_rebuilding.png" alt="donga_web_rebuilding_img">
+                            <p class="donga_content_text">동아제약 웹사이트 리빌딩 프로젝트를 진행하였습니다.<br>기존에 이미지화되어있던 타이포그래피를 구조적으로 개선해 가독성과 접근성을 높였으며,<br>현대적인 사용자 경험을 제공하기 위해, 별로의 모바일 사이트가 아닌 반응형 웹사이트를 구축했습니다.</p>
+                            <img class="scroll_img" src="./project_img/donga_web_main_img.png" alt="donga_img">
+                            <p class="scroll_point_text">한눈에 보이는 동아제약의 슬로건</p>
+                            <img class="scroll_img" src="./project_img/donga_web_slider.gif" alt="donga_slider_content_gif">
+                            <span class="main_point">Main Point</span>
+                            <p class="scroll_point_text">페이지 상단부에 슬라이드를 통한 신제품 소개</p>
+                            <img class="scroll_img" src="./project_img/donga_web_img.png" alt="donga_web_img">
+                            <p class="scroll_point_text">동아제약의 포인트 컬러를 전면 배치한 색 통일감</p>
+                        </div>
+                        <div class="scroll_content donga_content link_web_container">
+                            <img class="link_web_img scroll_img" src="./project_img/donga_web_mockup.png" alt="aonga_web_mockup_img">
+                            <p class="link_web_text_content">표현작업 : 반응형 웹페이지</p>
+                            <p class="link_web_text_content">제작프로그램 : Figma, VisalStudio Code</p>
+                            <p class="link_web_text_content">디자인 및 개발스킬 : ux/ui 디자인, figma 활용, 와이어프레임 제작, 스타일가이드 제작, HTML5 + CSS3활용</p>
+                            <button class="scroll_btn"><a href="">사이트 보러가기</a></button>
                         </div>
                     </div>
 
-                    <div class="donga_content">
-                        <h2 class="scroll_content_title">동아제약_Rebuilding</h2>
-                        <img class="scroll_img" src="./project_img/donga_web_rebuilding.png" alt="donga_web_rebuilding_img">
-                        <div class="scroll_ponit_content_container">
-                            <img class="scroll_gif" src="" alt="">
-                            <p class="scroll_point_text"></p>
-                            <img class="scroll_gif" src="" alt="">
-                            <span class="main_point"></span>
-                            <p class="scroll_point_text"></p>
-                            <img class="scroll_gif" src="" alt="">
-                            <p class="scroll_point_text"></p>
-                        </div>
-                        <div class="link_web_container">
-                            <img class="link_web_img" src="./project_img/donga_web_mockup.png" alt="aonga_web_mockup_img">
-                            <p class="link_web_text_content"></p>
-                            <p class="link_web_text_content"></p>
-                            <p class="link_web_text_content"></p>
-                            <button class="scroll_btn btn"><a href=""></a></button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -174,26 +192,25 @@
                 <div class="contact_text_container">
                     <div class="contact_img_container">
                         <p class="contact_title_e">Thank you&#33;</p>
-                        <img class="contact_img" src="" alt="">
+                        <img class="contact_img" src="./project_img/main_3d_icon2.png" alt="3d_icon">
                     </div>
                     <p class="contact_title_k">지금까지 저의 포트폴리오를 봐주셔서 감사합니다</p>
                     <h2 class="contact_email">E-Mail:heo059802&#64;gamil.com</h2>
                 </div>
                 <div class="contact_icon_container">
-                    <a href=""><img src="./project_img/github_icon.png" alt="gethub"></a>
-                    <a href=""><img src="./project_img/kakaotalk_icon.png" alt="kakaotalk"></a>
+                    <a href=""><img class="contact_icon" src="./project_img/github_icon.png" alt="gethub"></a>
+                    <a href=""><img class="contact_icon" src="./project_img/kakaotalk_icon.png" alt="kakaotalk"></a>
                 </div>
             </div>
+            <div class="footer_container">
+                <p class="footer_content">
+                    본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 만들어진 사이트입니다.<br>HEOYUSEON&copy;2024 POTFOLIO
+                </p>
+            </div>
+            <a href=""><img class="up_icon" src="./project_img/up_icon.png" alt="up_icon"></a>
         </section>
     </main>
 
-    <footer id="footer">
-        <div class="footer_container">
-            <p class="footer_content">
-                본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 만들어진 사이트입니다.<br>HEOYUSEON&copy;2024 POTFOLIO
-            </p>
-            <a href=""><img class="up_icon" src="./project_img/up_icon.png" alt="up_icon"></a>
-        </div>
-    </footer>
+    <script src="./index.js"></script>
 </body>
 </html> 

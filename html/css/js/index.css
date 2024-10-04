@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --main-point-color-01 : #fbfbf1;
+    --main-point-color-02 : #ff5733;
+    --main-g-color-01 : #4d4d4d;
+    --main-g-color-02 : #808080;
+    --main-g-color-03 : #cccccc;
+    --main-g-color-04 : #f2f2f2;
+    --main-w-color-01 : #ffffff;
+    --main-w-color-02 : #ffffff9d;
+}
+
+* {
+    list-style: none;
+}
+
+button{
+	all: unset;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--main-g-color-01);
+}
+
+.body{
+    position: relative;
+    font-family: 'Pretendard-Regular';
+}
+
+.header_container{
+    width: 100%;
+    max-width: 1680px;
+    height: 55px;
+    margin: 0 auto; 
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.memu_content_contaienr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.memu_content{
+    font-size: 28px;
+    color: var(--main-g-color-01);
+}
+
+#main_intro{
+    background-image: url(./project_img/bgi_main.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.intro_container{
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.intro_typing_container {
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    font-weight:700;
+    font-family:'Pretendard';
+    margin: 50px;
+    word-break:keep-all;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: var(--main-point-color-02);
+
+}
+
+#cursor {
+    border-left: 2px solid var(--main-point-color-02); /* 커서 스타일 */
+    animation: blink 0.7s infinite;
+    display: inline-block;
+    margin-left: 2px;
+    height: 60px; /* 폰트 크기와 동일하게 설정 */
+    vertical-align: middle;
+  }
+
+.intro_content_k{
+    color: var(--main-g-color-02);
+    font-size: 25px;
+    text-align: center;
+    line-height: 190%;
+}
+
+.mouse_container{
+    width: 50px;
+    height: 80px;
+    /* background-color: var(--main-g-color-02); */
+    position: absolute;
+    top: 85%;
+    left: 50%;
+}
+
+.animation_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 20px;
+    height: 40px;
+}
+
+.mouse_content{
+    position: relative;
+
+    width: 100%;
+    /* width는 상위 부모의 크기를 종속 시키는게 좋기 때문에 % 설정하는 것이 좋음 */
+    height: 40px;
+
+    box-sizing: border-box;
+
+    border: 2px solid var(--main-point-color-02);
+    border-radius: 12px;
+    /* width와 height의 길이가 다를 경우 width의 절반 값을 px로 주면 됨.  */
+
+    /* animation: mouse-down 2s infinite; */
+}
+
+.mouse_wheel_content{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main-point-color-02);
+
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 25%;
+
+    animation: wheel-down 2s infinite;
+}
+
+
+#about {
+    background-image: url(./project_img/bgi_sub1.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.about_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 32px;
+}
+
+.title_e {
+    color: var(--main-point-color-02);
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.img_text_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.img_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.my_img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.about_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.about_content_container {
+    width: 100%;
+    height: fit-content;
+    max-width: 760px;
+    padding: 20px;
+    background-color: var(--main-w-color-02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.about_content{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-g-color-02);
+    line-height: 190%;
+}
+
+.about_btn{
+    text-align: right;
+    color: var(--main-g-color-02);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.about_btn::after{
+    content: '';
+    display: block;
+    width: 10px;
+    aspect-ratio: 1;
+    border: 1px solid var(--main-g-color-02);
+    transform: rotate(45deg);
+    border-bottom: none;
+    border-left: none;
+}
+
+
+
+/* ------------------------------ */
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.my-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--main-w-color-02);
+    border-radius: 8px;
+}
+
+.slide_icon{
+    width: 60%;
+}
+
+#skill{
+    background-image: url(./project_img/bgi_sub2.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.skills_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 32px;
+    z-index: 999;
+}
+
+.skills_icon_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills_icon{
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+
+.skills_icon:hover{
+    transform: translateY(-20px);
+}
+
+.skills_rotate_img_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.rotate_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+}
+
+.rotate_img.top{
+    top: 5%;
+    left: 72%;
+    width: 15%;
+    animation: rotateImage 5s linear infinite;
+}
+
+.rotate_img.left{
+    top: 25%;
+    left: 15%;
+    width: 5%;
+    animation: rotateImage2 4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.rotate_img.bottom{
+    top: 65%;
+    left: 8%;
+    width: 8%;
+    animation: rotateImage 5s linear infinite;
+}
+
+
+#loop{
+    position: relative;
+    top: -95px;
+}
+
+.portfolio_loop_container{
+    position: absolute;
+    width: 100%;
+    height: fit-content; 
+    overflow: hidden;
+}
+
+.loop_content_container{
+    width: max-content;
+    display: flex;
+    animation: roll 15s infinite linear;
+    /* flex 정렬속성 사용하면 position 없어도 설정 가능 */
+    /* display: flex; align-items:center; justify-content: center; */
+}
+
+.loop_content{
+    font-size: 100px;
+    flex-shrink: 0;
+    /* 위에 loop_content_container에 flex 속성 사용할 경우 
+    loop_content  position: absolute; 삭제 및 nth-child 속성 삭제 */
+    
+    font-size: 130px; 
+    font-weight: 900;
+    color: var(--main-point-color-01); 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#contact{
+    background-image: url(./project_img/bgi_sub1.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contact_contaienr{
+    padding: 0 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact_text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.contact_img_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact_icon_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact_img{
+    width: 80px;
+    animation: rotateImage 5s linear infinite;
+}
+
+.contact_title_e{
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--main-point-color-02);
+}
+
+.contact_title_k{
+    font-size: 28px;
+    font-weight: 400px;
+    color: var(--main-g-color-01);
+}
+
+.contact_email{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--main-g-color-01);
+}
+
+.contact_icon{
+    width: 100%;
+    max-width: 120px;
+}
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_content{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.up_icon{
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 5%;
+    z-index: 999;
+}
+
+
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+  @keyframes wheel-down {
+    /* 휠이 위에 있다가 아래로 내려오는 움직임 */
+   /* 0%~33% 구간, 66%~100% 구간은 각각 같은 크기를 유지해야하기 때문에 같은 값 설정 */
+    0% {
+        top: 25%;
+    }
+    33% {
+        top: 25%;
+    }
+    66% {
+        top: 75%;
+    }
+    100% {
+        top: 75%;
+    }
+}
+
+@keyframes roll {
+    0%{
+       transform: translateX(0%);
+    } 
+
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes rotateImage {
+    from{
+       transform: rotate(0deg);
+    } 
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateImage2 {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
