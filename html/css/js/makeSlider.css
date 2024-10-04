@@ -1,12 +1,23 @@
 .slide_total_container{
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-evenly;
+    background-color: var(--main-w-color-02);
+
+}
+
+.slide_title_k{
+    color: var(--main-point-color-02);
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .my-slide {
-    width: 500px;
-    height: 700px;
+    width: 700px;
+    height:100%;
 }
 
 .my-content {
@@ -15,10 +26,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color:var(--main-w-color-02);
+    border-radius: 8px;
 }
 
 .slide_icon{
-    width: 80%;
+    width: 60%;
+    aspect-ratio: 1;
 }
 
 .slide-container {
@@ -35,8 +49,6 @@
     display: flex;
     transform: translateX(0);
     transition: 1s;
-    background-color: antiquewhite;
-
 }
 
 .auto-slide-content {
@@ -95,9 +107,9 @@
     background-color: var(--main-point-color-01);
     border-radius: 50%;
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: 1px solid var(--main-g-color-03);
 }
 
 .slide-button.active {
-    background-color: red;
+    background-color: var(--main-point-color-02);
 }

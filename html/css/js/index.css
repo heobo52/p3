@@ -274,36 +274,6 @@ a {
     border-left: none;
 }
 
-
-
-/* ------------------------------ */
-/* .slider{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.my-slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--main-w-color-02);
-    border-radius: 8px;
-}
-
-.slide_icon{
-    width: 60%;
-} */
-
 #skill{
     background-image: url(./project_img/bgi_sub2.png);
     background-position: center;
@@ -363,7 +333,7 @@ a {
     top: 5%;
     left: 72%;
     width: 15%;
-    animation: rotateImage 5s linear infinite;
+    animation: rotateImage 6s linear infinite;
 }
 
 .rotate_img.left{
@@ -377,7 +347,7 @@ a {
     top: 65%;
     left: 8%;
     width: 8%;
-    animation: rotateImage 5s linear infinite;
+    animation: rotateImage 7s linear infinite;
 }
 
 
@@ -397,15 +367,11 @@ a {
     width: max-content;
     display: flex;
     animation: roll 15s infinite linear;
-    /* flex 정렬속성 사용하면 position 없어도 설정 가능 */
-    /* display: flex; align-items:center; justify-content: center; */
 }
 
 .loop_content{
     font-size: 100px;
     flex-shrink: 0;
-    /* 위에 loop_content_container에 flex 속성 사용할 경우 
-    loop_content  position: absolute; 삭제 및 nth-child 속성 삭제 */
     
     font-size: 130px; 
     font-weight: 900;
