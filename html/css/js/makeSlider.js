@@ -1,7 +1,7 @@
 function makeSlider(slider,viewCount,gap){
-    
+
     slider.style.position = 'relative';
-    slider.style.marginBottom = '56px';
+    // slider.style.marginBottom = '56px';
 
 
     const slideContents = [];
@@ -25,8 +25,8 @@ function makeSlider(slider,viewCount,gap){
     }
 
     const sliderInterface = createAndInsert('div','slider-interface',slider);
-    const prev = createAndInsert('button','prev',sliderInterface);
-    const next = createAndInsert('button','next',sliderInterface);
+    // const prev = createAndInsert('button','prev',sliderInterface);
+    // const next = createAndInsert('button','next',sliderInterface);
     const buttonContainer = createAndInsert('div','button-container',sliderInterface);
 
 
@@ -53,41 +53,41 @@ function makeSlider(slider,viewCount,gap){
     컨텐츠크기반영();
     클론생성();
     
-    next.addEventListener('click', ()=>{
-        console.log(viewCount)
-        if(!움직이는중){
-            index++;
-            위치적용(true);
+    // next.addEventListener('click', ()=>{
+    //     console.log(viewCount)
+    //     if(!움직이는중){
+    //         index++;
+    //         위치적용(true);
 
-            움직이는중=true;
+    //         움직이는중=true;
             
-            setTimeout(() => {
-                움직이는중=false;
-                console.log(wrapper.childElementCount - 1 - viewCount)
-                if(index > wrapper.childElementCount - 1 - viewCount) {
-                    index = viewCount;
-                    위치적용(false);
-                } 
-            }, 1000);
-        }
-    })
+    //         setTimeout(() => {
+    //             움직이는중=false;
+    //             console.log(wrapper.childElementCount - 1 - viewCount)
+    //             if(index > wrapper.childElementCount - 1 - viewCount) {
+    //                 index = viewCount;
+    //                 위치적용(false);
+    //             } 
+    //         }, 1000);
+    //     }
+    // })
 
-    prev.addEventListener('click', ()=>{
-        if(!움직이는중){
-            움직이는중 = true;
+    // prev.addEventListener('click', ()=>{
+    //     if(!움직이는중){
+    //         움직이는중 = true;
             
-            index--;
-            위치적용(true);
+    //         index--;
+    //         위치적용(true);
 
-            setTimeout(() => {
-                if(index < viewCount) {
-                    index = wrapper.childElementCount-1 -viewCount;
-                    위치적용(false);  
-                } 
-                움직이는중 = false;
-            }, 1000);
-        }
-    })
+    //         setTimeout(() => {
+    //             if(index < viewCount) {
+    //                 index = wrapper.childElementCount-1 -viewCount;
+    //                 위치적용(false);  
+    //             } 
+    //             움직이는중 = false;
+    //         }, 1000);
+    //     }
+    // })
 
     window.addEventListener('resize', 컨텐츠크기반영)
 
@@ -128,11 +128,6 @@ function makeSlider(slider,viewCount,gap){
     }
 
     function 컨텐츠크기반영(){
-        if(window.innerWidth < 1200) {
-            viewCount = 1;
-        }else {
-            viewCount=2
-        }
         contentsWidth = (slider.clientWidth - gap * (viewCount-1)) / viewCount
         
         wrapper.style.gap = `${gap}px`

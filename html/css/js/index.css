@@ -43,7 +43,7 @@ a {
 .header_container{
     width: 100%;
     max-width: 1680px;
-    height: 55px;
+    height: 65px;
     margin: 0 auto; 
     padding: 0 32px;
     display: flex;
@@ -277,7 +277,7 @@ a {
 
 
 /* ------------------------------ */
-.slider{
+/* .slider{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +302,7 @@ a {
 
 .slide_icon{
     width: 60%;
-}
+} */
 
 #skill{
     background-image: url(./project_img/bgi_sub2.png);
