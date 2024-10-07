@@ -375,7 +375,7 @@ a {
     
     font-size: 130px; 
     font-weight: 900;
-    color: var(--main-point-color-01); 
+    color: #fbfbf14f;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -520,9 +520,9 @@ a {
 
 @keyframes rotateImage2 {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
       }
       100% {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
       }
 }

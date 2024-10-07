@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project3</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./makeSlider.css">
     <link rel="stylesheet" href="./scroll.css">
 </head>
 <body>
@@ -97,9 +96,9 @@
                         <p class="slide_icon_text">flexibility</p>
                       </div>
                     </div>
-                    <!-- 페이지네이션 -->
+
                     <div class="swiper-pagination"></div>
-                    <!-- 네비게이션 버튼 -->
+
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                   </div>
@@ -139,100 +138,44 @@
                 </div>
             </div>
         </section>
-<!-- 
-        <section id="scroll">
-            <div class="scroll_container">
-                <div class="scroll_left_container" id="fixed_container">
-                    <div class="fixed_text_content" data-target="punto_content">punto project</div>
-                    <div class="fixed_text_content" data-target="donga_content">동아제약</div>
-                </div>
 
-                <div class="scroll_right_container">
-                        <div class="scroll_section punto_content active">
-                            <h2 class="scroll_content_title">Punto Project_Production</h2>
-                            <img class="scroll_img" src="./project_img/punto_web_img.png" alt="punto_web_mockup_img">
-                            <p class="punto_content_text">가상의 디자인 에이전시 'Punto Project' 웹사이트를 제작했습니다.<br>다양한 인터렉션을 통해 브랜드의 역동성을 강조하였으며,<br>블랙과 화이트 컬러를 사용해 심플하면서도 가독성이 뛰어난 디자인을 구현했습니다.</p>
+        <section id="scroll">
+            <div class="scroll_left_container" id="left_container">
+                <div class="fixed_text_content" data-target="punto_content">1. punto project</div>
+                <div class="fixed_text_content" data-target="donga_content">2. 동아제약</div>
+            </div>
+    
+            <div class="scroll_right_container" id="right_container">
+                <div class="scroll_content punto_content">
+                    <div class="scroll_content_gap">
+                        <div class="content_punto">
+                            <h2>Punto Project_Production</h2>
+                            <img class="punto_main_img" src="./project_img/punto_web_img.png" alt="Punto Project Image">
+                            <p>가상의 디자인 에이전시 'Punto Project' 웹사이트를 제작했습니다.<br>다양한 인터렉션을 통해 브랜드의 역동성을 강조하였으며, 블랙과 화이트 컬러를 사용해 심플하면서도 가독성이 뛰어난 디자인을 구현했습니다.</p>
+                        </div>
+                        <div class="content_punto">
                             <img class="scroll_img" src="./project_img/punto_web_loop_gif.gif" alt="punto_loop_content_gif">
                             <p class="scroll_point_text">흘러가는 텍스트 루프 컨텐츠 배치</p>
+                        </div>
+                        <div class="content_punto">
                             <img class="scroll_img" src="./project_img/punto_web_click_content_gif.gif" alt="punto_click_content_gif">
                             <p class="scroll_point_text">브랜드의 핵심가치를 복합적 인터랙션을 통해 보여줌</p>
+                        </div>
+                        <div class="content_punto">
                             <img class="scroll_img" src="./project_img/punto_web_scroll_content_gif.gif" alt="punto_scroll_content_gif">
                             <span class="main_point">Main Point</span>
                             <p class="scroll_point_text">스크롤 슬라이더를 통해<br>한눈에 볼 수 있는 포트폴리오 페이지 제작</p>
                         </div>
-                        <div class="scroll_content punto_content link_web_container">
+                        <div class="content_punto">
                             <img class="link_web_img scroll_img" src="./project_img/punto_web_mockup.png" alt="">
                             <p class="link_web_text_content">표현작업 : 반응형 웹페이지</p>
                             <p class="link_web_text_content">제작프로그램 : Figma, VisalStudio Code</p>
                             <p class="link_web_text_content">디자인 및 개발스킬 : ux/ui 디자인, figma 활용, 와이어프레임 제작, 스타일가이드 제작, HTML5 + CSS3활용</p>
-                            <button class="scroll_btn"><a href="">사이트 보러가기</a></button>
+                            <button class="scroll_btn"><a href="http://127.0.0.1:5500/index%20copy.html">사이트 보러가기</a></button>
                         </div>
-
-                        <div class="scroll_content donga_content">
-                            <h2 class="scroll_content_title">동아제약_Rebuilding</h2>
-                            <img class="scroll_img" src="./project_img/donga_web_rebuilding.png" alt="donga_web_rebuilding_img">
-                            <p class="donga_content_text">동아제약 웹사이트 리빌딩 프로젝트를 진행하였습니다.<br>기존에 이미지화되어있던 타이포그래피를 구조적으로 개선해 가독성과 접근성을 높였으며,<br>현대적인 사용자 경험을 제공하기 위해, 별로의 모바일 사이트가 아닌 반응형 웹사이트를 구축했습니다.</p>
-                            <img class="scroll_img" src="./project_img/donga_web_main_img.png" alt="donga_img">
-                            <p class="scroll_point_text">한눈에 보이는 동아제약의 슬로건</p>
-                            <img class="scroll_img" src="./project_img/donga_web_slider.gif" alt="donga_slider_content_gif">
-                            <span class="main_point">Main Point</span>
-                            <p class="scroll_point_text">페이지 상단부에 슬라이드를 통한 신제품 소개</p>
-                            <img class="scroll_img" src="./project_img/donga_web_img.png" alt="donga_web_img">
-                            <p class="scroll_point_text">동아제약의 포인트 컬러를 전면 배치한 색 통일감</p>
-                        </div>
-                        <div class="scroll_content donga_content link_web_container">
-                            <img class="link_web_img scroll_img" src="./project_img/donga_web_mockup.png" alt="aonga_web_mockup_img">
-                            <p class="link_web_text_content">표현작업 : 반응형 웹페이지</p>
-                            <p class="link_web_text_content">제작프로그램 : Figma, VisalStudio Code</p>
-                            <p class="link_web_text_content">디자인 및 개발스킬 : ux/ui 디자인, figma 활용, 와이어프레임 제작, 스타일가이드 제작, HTML5 + CSS3활용</p>
-                            <button class="scroll_btn"><a href="">사이트 보러가기</a></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
-        <section id="scroll">
-            <!-- Left Container (Fixed Text) -->
-            <div class="scroll_left_container" id="left_container">
-                <div class="fixed_text_content" data-target="punto_content">punto project</div>
-                <div class="fixed_text_content" data-target="donga_content">동아제약</div>
-            </div>
-    
-            <!-- Right Container (All content is preloaded but hidden initially) -->
-            <div class="scroll_right_container" id="right_container">
-                <!-- Punto Project Content -->
-                <div class="scroll_content punto_content">
-                    <div class="content_punto">
-                        <h2>Punto Project_Production</h2>
-                        <img src="./project_img/punto_web_img.png" alt="Punto Project Image">
-                        <p>가상의 디자인 에이전시 'Punto Project' 웹사이트를 제작했습니다.</p>
-                        <p>다양한 인터렉션을 통해 브랜드의 역동성을 강조하였으며, 블랙과 화이트 컬러를 사용해 심플하면서도 가독성이 뛰어난 디자인을 구현했습니다.</p>
-                    </div>
-                    <div class="content_punto">
-                        <img class="scroll_img" src="./project_img/punto_web_loop_gif.gif" alt="punto_loop_content_gif">
-                        <p class="scroll_point_text">흘러가는 텍스트 루프 컨텐츠 배치</p>
-                    </div>
-                    <div class="content_punto">
-                        <img class="scroll_img" src="./project_img/punto_web_click_content_gif.gif" alt="punto_click_content_gif">
-                        <p class="scroll_point_text">브랜드의 핵심가치를 복합적 인터랙션을 통해 보여줌</p>
-                    </div>
-                    <div class="content_punto">
-                        <img class="scroll_img" src="./project_img/punto_web_scroll_content_gif.gif" alt="punto_scroll_content_gif">
-                        <span class="main_point">Main Point</span>
-                        <p class="scroll_point_text">스크롤 슬라이더를 통해<br>한눈에 볼 수 있는 포트폴리오 페이지 제작</p>
-                    </div>
-                    <div class="content_punto">
-                        <img class="link_web_img scroll_img" src="./project_img/punto_web_mockup.png" alt="">
-                        <p class="link_web_text_content">표현작업 : 반응형 웹페이지</p>
-                        <p class="link_web_text_content">제작프로그램 : Figma, VisalStudio Code</p>
-                        <p class="link_web_text_content">디자인 및 개발스킬 : ux/ui 디자인, figma 활용, 와이어프레임 제작, 스타일가이드 제작, HTML5 + CSS3활용</p>
-                        <button class="scroll_btn"><a href="">사이트 보러가기</a></button>
                     </div>
                 </div>
     
-                <!-- Donga Content -->
                 <div class="scroll_content donga_content">
                     <div class="content_donga">
                         <h2 class="scroll_content_title">동아제약_Rebuilding</h2>
@@ -254,9 +197,7 @@
                     </div>
                     <div class="content_donga">
                         <img class="link_web_img scroll_img" src="./project_img/donga_web_mockup.png" alt="aonga_web_mockup_img">
-                        <p class="link_web_text_content">표현작업 : 반응형 웹페이지</p>
-                        <p class="link_web_text_content">제작프로그램 : Figma, VisalStudio Code</p>
-                        <p class="link_web_text_content">디자인 및 개발스킬 : ux/ui 디자인, figma 활용, 와이어프레임 제작, 스타일가이드 제작, HTML5 + CSS3활용</p>
+                        <p class="link_web_text_content">표현작업 : 반응형 웹페이지<br>제작프로그램 : Figma, VisalStudio Code<br>디자인 및 개발스킬 : ux/ui 디자인, figma 활용, 와이어프레임 제작, 스타일가이드 제작, HTML5 + CSS3활용</p>
                         <button class="scroll_btn"><a href="">사이트 보러가기</a></button>
                     </div>
                 </div>
@@ -289,9 +230,5 @@
     </main>
 
     <script src="./index.js"></script>
-    <script src="./makeSlider.js"></script>
-    <script>
-        makeSlider(document.querySelector('.my-slide'),3,15);
-    </script>
 </body>
 </html> 
