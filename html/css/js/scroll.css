@@ -1,4 +1,4 @@
-#scroll{
+/* #scroll{
     background-image: url(./project_img/bgi_sub3.png);
     background-position: center;
     background-size: cover;
@@ -13,4 +13,79 @@
 
 .donga_content{
     display: none;
+} */
+
+/* Layout */
+#scroll {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('your-background-image.jpg'); /* 배경 이미지 */
+    background-size: cover;
+    background-position: center;
 }
+
+/* Left Container: 2:8 비율로 변경 */
+.scroll_left_container {
+    flex-basis: 20%; /* 2:8 비율로 변경 */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); /* 배경 색 추가 */
+}
+
+.fixed_text_content {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Right Container: 8 비율로 변경 */
+.scroll_right_container {
+    flex-basis: 80%; /* 2:8 비율로 변경 */
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Right Container에서 스크롤바 숨기기 */
+.scroll_right_container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Content 기본 스타일 - 초기에는 안 보임 */
+.scroll_content {
+    padding: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* 부드러운 전환 */
+    display: none; /* 처음에는 표시되지 않음 */
+}
+
+/* Active 클래스 적용 시 표시 */
+.scroll_content.active {
+    opacity: 1;
+    display: block;
+}
+
+/* 이미지 스타일 */
+.scroll_content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px; /* 이미지와 텍스트 간격 */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 735px) {
+    #scroll {
+        flex-direction: column;
+    }
+
+    .scroll_left_container, .scroll_right_container {
+        flex-basis: 100%;
+        height: auto;
+        overflow: visible;
+    }
+}
+

@@ -20,6 +20,27 @@
     height:100%;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    color: var(--main-point-color-02);
+  }
+  
+  .swiper-pagination-bullet {
+    background: var(--main-point-color-02);
+  }
+
 .my-content {
     /* background-color: pink; */
     display: flex;
