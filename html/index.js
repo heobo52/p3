@@ -12,7 +12,6 @@ function typeWriter() {
 
 typeWriter();
 
-
 document.addEventListener('DOMContentLoaded', function() {
   const fixedTextContents = document.querySelectorAll('.fixed_text_content');
   const scrollContents = document.querySelectorAll('.scroll_content');

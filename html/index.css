@@ -372,8 +372,6 @@ a {
 .loop_content{
     font-size: 100px;
     flex-shrink: 0;
-    
-    font-size: 130px; 
     font-weight: 900;
     color: #fbfbf14f;
     padding: 10px;

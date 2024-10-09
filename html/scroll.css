@@ -5,6 +5,7 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
+    padding: 0 32px
 }
 
 
@@ -38,7 +39,6 @@
 
 
 .scroll_content {
-    padding: 40px;
     opacity: 0;
     transition: opacity 0.5s ease; 
     display: none;
@@ -91,7 +91,7 @@
         box-sizing: border-box;
 }
 
-.content_punto{
+.content_package{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,19 +99,35 @@
     gap: 40px;
 }
 
-.content_punto>p{
+.content_package>p{
     line-height: 170%;
     font-size: 18px;
     font-weight: 500;
     color: var(--main-g-color-01);
 }
 
-.content_punto>h2{
+.content_package>h2{
     font-size: 28px;
     font-weight: 900;
     color: var(--main-point-color-01);
 }
 
+.content_package>.link_web_text_content{
+    text-align: left;
+}
+
+.scroll_btn{
+    width: 20%;
+    height: 35px;
+    border: 2px solid var(--main-point-color-02);
+    color: var(--main-g-color-01);
+    border-radius: 50px;
+}
+
+.scroll_btn:hover{
+    background-color: var(--main-point-color-02);
+    color: var(--main-point-color-01);
+}
 
 
 
