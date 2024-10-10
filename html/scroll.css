@@ -1,20 +1,22 @@
 #scroll {
     background-image: url(./project_img/bgi_sub3.png);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
-    background-position: center;
-    padding: 0 32px
+    background-position: 0% 80%;
+    padding: 100px 32px 100px 32px;
 }
 
 
 .scroll_left_container {
-    flex-basis: 20%;
+    flex-basis: 25%;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    height: 100%;
+    top: 150px; /* 스크롤 시작 위치를 조정하여 상단 여백 유지 */
+    height: calc(100vh - 100px); /* 위아래 마진을 제외한 높이 계산 */
+    margin-left: 150px;
 }
 
 .fixed_text_content {
@@ -27,7 +29,7 @@
 
 .scroll_right_container {
     flex-basis: 80%;
-    height: 100vh;
+    height: calc(100vh - 100px); /* 위아래 마진을 제외한 높이 계산 */
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -40,9 +42,10 @@
 
 .scroll_content {
     opacity: 0;
-    transition: opacity 0.5s ease; 
+    transition: opacity 0.5s ease;
     display: none;
     text-align: center;
+    margin-bottom: 150px; /* 하단 마진 추가 */
     
 }
 
@@ -122,6 +125,9 @@
     border: 2px solid var(--main-point-color-02);
     color: var(--main-g-color-01);
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .scroll_btn:hover{

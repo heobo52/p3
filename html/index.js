@@ -39,6 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+const icons = document.querySelectorAll('.icon');
+
+icons.forEach(icon => {
+    icon.addEventListener('mouseover', function() {
+        for (let i = 0; i < 5; i++) {
+            const bubble = document.createElement('div');
+            bubble.classList.add('bubble');
+            bubble.style.left = `${Math.random() * 40}px`;
+            bubble.style.left = `${Math.random() * 60}px`;
+            bubble.style.top = `${Math.random() * 100}px`;
+            this.appendChild(bubble);
+            setTimeout(() => bubble.remove(), 1000);
+        }
+    });
+});
+
 
 
 
